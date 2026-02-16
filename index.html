@@ -2,285 +2,34 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>企鹅文库</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>密码访问</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        body{
+            text-align:center; margin-top:100px; font-size:20px;
         }
-        
-        body {
-            font-family: 'Noto Sans SC', sans-serif;
-            background-color: #ffffff;
-            color: #222222;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        input{
+            padding:10px; font-size:18px; width:200px;
         }
-        
-        /* 头部样式 */
-        header {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #222222;
-        }
-        
-        .logo-container {
-            margin-bottom: 15px;
-        }
-        
-        .chinese-title {
-            font-family: 'Ma Shan Zheng', cursive;
-            font-size: 3.5rem;
-            letter-spacing: 3px;
-            margin-bottom: 5px;
-            font-weight: normal;
-        }
-        
-        .english-title {
-            font-family: 'ZCOOL XiaoWei', serif;
-            font-size: 1.3rem;
-            letter-spacing: 6px;
-            margin-bottom: 15px;
-            color: #444444;
-        }
-        
-        .header-line {
-            height: 3px;
-            background-color: #222222;
-            width: 100%;
-            margin-top: 10px;
-        }
-        
-        /* 模块网格布局 */
-        .library-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        /* 书籍模块样式 */
-        .book-module {
-            border: 2px solid #222222;
-            padding: 25px;
-            background-color: #f9f9f9;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .book-module:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .book-title {
-            font-family: 'ZCOOL XiaoWei', serif;
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid #222222;
-        }
-        
-        .book-author {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-            color: #555555;
-        }
-        
-        .book-date {
-            font-size: 0.95rem;
-            color: #777777;
-            margin-bottom: 25px;
-        }
-        
-        .read-button {
-            display: inline-block;
-            background-color: #222222;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 25px;
-            font-size: 1rem;
-            border: 2px solid #222222;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-align: center;
-        }
-        
-        .read-button:hover {
-            background-color: #ffffff;
-            color: #222222;
-        }
-        
-        /* 页脚样式 */
-        footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #dddddd;
-            text-align: center;
-            color: #777777;
-            font-size: 0.9rem;
-        }
-        
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .chinese-title {
-                font-size: 2.5rem;
-            }
-            
-            .english-title {
-                font-size: 1rem;
-                letter-spacing: 4px;
-            }
-            
-            .library-container {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            body {
-                padding: 15px;
-            }
-            
-            .chinese-title {
-                font-size: 2rem;
-            }
-            
-            .book-module {
-                padding: 20px;
-            }
+        button{
+            padding:10px 20px; font-size:18px;
         }
     </style>
 </head>
 <body>
-    <!-- 头部区域 -->
-    <header>
-        <div class="logo-container">
-            <h1 class="chinese-title">企鹅文库</h1>
-            <div class="english-title">PENGUIN LIBRARY</div>
-        </div>
-        <div class="header-line"></div>
-    </header>
-    
-    <!-- 书籍模块区域 -->
-    <main>
-        <div class="library-container">
-            
-            <!-- 模块-->
-            <article class="book-module">
-                <h2 class="book-title">《Invader Long 无敌少龙》</h2>
-                <p class="book-author">作者：红T毒物丶</p>
-                <p class="book-date">上架时间：2025年12月31日</p>
-                <a href="https://penguin0901.github.io/wk/long2.html" class="read-button">点进阅读</a>
-            </article>
-            
-            <!-- 模块1-->
-            <article class="book-module">
-                <h2 class="book-title">《龙の兄：popular of Long Bro》</h2>
-                <p class="book-author">作者：红T毒物丶</p>
-                <p class="book-date">上架时间：2025年12月31日</p>
-                <a href="https://penguin0901.github.io/wk/long.jpg" class="read-button">点进阅读</a>
-            </article>
-            
-            <!-- 模块2：-->
-            <article class="book-module">
-                <h2 class="book-title">《毛泽东选集 第五卷》</h2>
-                <p class="book-author">作者：毛泽东</p>
-                <p class="book-date">上架时间：2025年12月</p>
-                <a href="https://penguin0901.github.io/dh/maowu.pdf" class="read-button">点进阅读</a>
-            </article>
-            
-            <!-- 模块2：-->
-            <article class="book-module">
-                <h2 class="book-title">《毛主席诗词150首》</h2>
-                <p class="book-author">作者：毛泽东</p>
-                <p class="book-date">上架时间：2025年12月</p>
-                <a href="mzxsc.txt" class="read-button">点进阅读</a>
-            </article>
-            
-            <!-- 模块3：-->
-            <article class="book-module">
-                <h2 class="book-title">《宿敌》</h2>
-                <p class="book-author">作者：李尚泽</p>
-                <p class="book-date">上架时间：2025年12月</p>
-                <a href="https://penguin0901.github.io/wk/malone.html" class="read-button">点进阅读</a>
-            </article>
-        </div>
-    </main>
-    
-    <!-- 页脚 -->
-    <footer>
-        <p>企鹅文库 © 2025</p>
-        <p>访问地址: penguin0901.github.io</p>
-    </footer>
+    <h1>输入密码才可访问</h1>
+    <br>
+    <input type="password" id="pwd" placeholder="请输入密码">
+    <button onclick="check()">确认</button>
 
     <script>
-        // 添加简单的交互效果
-        document.addEventListener('DOMContentLoaded', function() {
-            const bookModules = document.querySelectorAll('.book-module');
-            
-            bookModules.forEach(module => {
-                // 为每个模块添加点击效果
-                const button = module.querySelector('.read-button');
-                
-                button.addEventListener('click', function(e) {
-                    // 创建一个点击反馈效果
-                    const ripple = document.createElement('span');
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.width, rect.height);
-                    const x = e.clientX - rect.left - size / 2;
-                    const y = e.clientY - rect.top - size / 2;
-                    
-                    ripple.style.cssText = `
-                        position: absolute;
-                        border-radius: 50%;
-                        background: rgba(255, 255, 255, 0.7);
-                        transform: scale(0);
-                        animation: ripple-animation 0.6s linear;
-                        width: ${size}px;
-                        height: ${size}px;
-                        top: ${y}px;
-                        left: ${x}px;
-                    `;
-                    
-                    this.appendChild(ripple);
-                    
-                    // 动画结束后移除元素
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 600);
-                });
-            });
-            
-            // 添加键盘导航支持
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Tab') {
-                    // 当使用Tab键导航时，为当前聚焦的元素添加视觉反馈
-                    const focused = document.activeElement;
-                    if (focused.classList.contains('read-button')) {
-                        focused.style.outline = '2px solid #222222';
-                        focused.style.outlineOffset = '2px';
-                    }
-                }
-            });
-            
-            // 移除焦点样式
-            document.addEventListener('click', function() {
-                const focused = document.activeElement;
-                if (focused && focused.classList.contains('read-button')) {
-                    focused.style.outline = 'none';
-                }
-            });
-        });
+        function check(){
+            let password = document.getElementById('pwd').value;
+            if(password === '13691'){
+                window.location.href = 'https://www.baidu.com';
+            }else{
+                alert('密码错误！');
+            }
+        }
     </script>
 </body>
 </html>
-
-
-
